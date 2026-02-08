@@ -12,4 +12,5 @@ export interface CalculatorProps {
 export interface ResultProps {
   data: CalculationData
   inflationRate: number | null
+  onReset: () => void
 }
