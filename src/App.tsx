@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Calculator from './components/Calculator'
+import Header from './components/Header'
 import { getInflationRate } from './services/inflationAPI'
 import type { CalculationData } from './types'
 import Result from './components/Results'
@@ -28,6 +29,7 @@ function App() {
   return (
     <div className="min-h-screen bg-linear-to-br from-deep-teal-950 via-medium-jungle-900 to-moss-green-950 text-white flex items-center justify-center p-4">
       <div className="w-full max-w-4xl mx-auto space-y-8 animate-fade-in-up">
+        <Header />
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <Calculator key={key} onCalculate={handleCalculate} />
           <div className="md:min-h-[400px] flex items-center justify-center">
