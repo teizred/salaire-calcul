@@ -5,6 +5,7 @@ import { getInflationRate } from './services/inflationAPI'
 import type { CalculationData } from './types'
 import Result from './components/Results'
 import './App.css'
+import Footer from './components/Footer'
 
 function App() {
   const [result, setResult] = useState<CalculationData | null>(null)
@@ -43,6 +44,7 @@ function App() {
             )}
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   )
